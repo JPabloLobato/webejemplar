@@ -14,28 +14,22 @@ function App() {
         </button>
       </div>
 
-      <button
-        className="menu-toggle"
-        aria-label="Abrir menú"
-        onClick={() => setMenuOpen(true)}
-      >
-        <i className="fa-solid fa-bars"></i>
+      <button className="menu-toggle" aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"} onClick={() => setMenuOpen(!menuOpen)}>
+          <i className={menuOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i> {/* Icono cambia según el estado del menú */}
       </button>
 
       {menuOpen && (
-        <div className="overlay">
-          <div className="overlay-blur" onClick={() => setMenuOpen(false)} />
-          <nav className="overlay-menu">
-            <button className="close-btn" onClick={() => setMenuOpen(false)}>
-              &times;
+          <div className="dropdown-menu-container">
+            <button className="close-menu" aria-label="Cerrar menú" onClick={() => setMenuOpen(false)}>
+                <i className="fa-solid fa-xmark"></i>
             </button>
-            <ul>
-              <li><a href="/auditar">Auditar</a></li>
-              <li><a href="/resultados">Resultados</a></li>
-              <li><a href="/configuracion">Configuración</a></li>
+              <ul className="dropdown-menu">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/result.html">Resultado</a></li>
+                <li><a href="/services.html">Servicios</a></li>
+                <li><a href="/contact.html">Contacto</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
       )}
 
       <div className="content">

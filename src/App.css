@@ -51,45 +51,16 @@ body {
   box-shadow: none;
 }
 
-.overlay {
+.dropdown-menu-container {
   position: fixed;
-  inset: 0;
-  z-index: 200;
-  display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-}
-
-.overlay-blur {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(2px);
-  z-index: 1;
-}
-
-.overlay-menu {
-  position: relative;
-  z-index: 2;
-  background: #222;
-  width: 300px;
-  max-width: 90vw;
+  top: 0;
+  right: 0; /* Esto posiciona el menú a la derecha */
+  width: 20vh;
   height: 100vh;
-  border-radius: 0;
-  box-shadow: -4px 0 24px rgba(0,0,0,0.4);
+  background: #181818;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 40px 30px 30px 30px;
-}
-
-.close-btn {
-  position: absolute;
-  top: 12px;
-  right: 18px;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
+  align-items: center;
+  padding-top: 40px;
 }
