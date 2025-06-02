@@ -32,7 +32,7 @@ function App() {
           </div>
       )}
 
-      <div className="content">
+      <div className="content1">
         <h2>Bienvenido a la Auditoría de Seguridad</h2>
         <p>Utiliza el menú para navegar por las diferentes secciones.</p>
       </div>
