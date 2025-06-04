@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowdown-toggle {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    animation: bounce 1.2s infinite;
+}
+
+.menu-toggle {
+    position: absolute;
+    color: white;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle:focus,
+.arrowdown-toggle:focus,
+.close-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-menu-container {
+    position: fixed;
+    top: 0;
+    right: 0; /* Esto posiciona el menú a la derecha */
+    width: 20vh;
+    height: 100vh;
+    background: #181818;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.close-menu {
+    position: absolute;
+    background: transparent;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.close-menu:focus {
+    outline: none;
+}
+
+.dropdown-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu li {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background: #333;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.content1 {
+    background: white;
+    color: black;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.analytic {
+    background: white;
+    color: black;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
