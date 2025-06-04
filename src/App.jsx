@@ -42,6 +42,10 @@ function App() {
         <p>asdfasdf</p>
         <input type="url" name="urlAnalytic" placeholder="Inserta la URL" />
       </div>
+      <footer>
+        <p>© 2023 Auditoría de Seguridad. Todos los derechos reservados.</p>
+          <p>Desarrollado por <a href=""></a> </p>
+      </footer>
     </>
   )
 }
