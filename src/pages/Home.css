@@ -1,13 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+/* Estilos específicos para la página Home */
 
 .header {
     text-align: center;

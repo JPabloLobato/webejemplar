@@ -17,10 +17,10 @@ function Navbar() {
                         <i className="fa-solid fa-xmark"></i>
                     </button>
                     <ul className="dropdown-menu">
-                        <li><a href="./Home.jsx">Inicio</a></li>
-                        <li><a href="./Resultados.jsx">Resultado</a></li>
-                        <li><a href="">Servicios</a></li>
-                        <li><a href="./Contactos.jsx">Contacto</a></li>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/resultados">Resultado</Link></li>
+                        <li><Link to="/servicios">Servicios</Link></li>
+                        <li><Link to="/contactos">Contacto</Link></li>
                     </ul>
                 </div>
             )}

@@ -1,69 +1,36 @@
+/* Estilos globales para la web*/
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: black;
   color: white;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.header {
-  text-align: center;
-  padding: 20px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Links globales */
+a {
+  color: #0ff;
+  text-decoration: none;
+  transition: color 0.2s;
 }
-
-.arrowdown-toggle {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  background: none;
-  border: none;
+a:hover {
   color: #fff;
-  font-size: 2.5rem;
-  cursor: pointer;
-  animation: bounce 1.2s infinite;
 }
 
-.menu-toggle {
-  position: absolute;
-  color: white;
-  top: 20px;
-  right: 20px;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-toggle:focus,
-.arrowdown-toggle:focus,
-.close-btn:focus {
+/* Quitar outline */
+button:focus,
+a:focus {
   outline: none;
-  box-shadow: none;
 }
 
-.content1 {
-  background: white;
-  color: black;
-  margin-top: 50px;
-  border-radius: 10px;
-  padding: 5px 20px;
-}
-
-.analytic {
-  background: white;
-  color: black;
-  margin-top: 50px;
-  border-radius: 10px;
-  padding: 5px 20px;
+/* Contenedor principal */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

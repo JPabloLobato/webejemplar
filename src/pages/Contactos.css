@@ -1,31 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
 .contact-container {
-    background: rgba(24, 24, 34, 0.98);
-    border-radius: 18px;
-    box-shadow: 0 0 32px #0ff, 0 0 8px #1ecece60;
-    padding: 2.5rem 2rem;
-    width: 350px;
-    max-width: 92vw;
-    text-align: center;
-    position: relative;
-    margin: 40px auto;
+    background: white;
+    color: black;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 5px 20px;
 }
 
 .contact-title {
     font-size: 2.3rem;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
-    color: #0ff;
-    text-shadow: 0 0 8px #0ff, 0 0 2px #fff;
-}
-
-.contact-desc {
-    font-size: 1rem;
-    color: #c0f7fa;
-    margin-bottom: 1.7rem;
 }
 
 .contact-form {
@@ -37,7 +21,7 @@ body {
 .contact-form input,
 .contact-form textarea {
     background: #13131a;
-    border: 1.7px solid #0ff;
+    border: 1.7px solid #181818;
     border-radius: 8px;
     color: #fff;
     padding: 0.7rem 1rem;
@@ -49,12 +33,12 @@ body {
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #fff;
-    box-shadow: 0 0 8px #0ff;
+    box-shadow: 0 0 8px #181818;
 }
 
 .contact-form button {
-    background: linear-gradient(90deg, #0ff, #1ecece 70%);
-    color: #000;
+    background: #181818;
+    color: #fff;
     border: none;
     border-radius: 8px;
     padding: 0.7rem;
@@ -62,20 +46,20 @@ body {
     font-weight: bold;
     cursor: pointer;
     letter-spacing: 1px;
-    box-shadow: 0 0 10px #0ff80b80;
+    box-shadow: 0 0 10px #181818;
     transition: background 0.2s, color 0.2s;
 }
 
 .contact-form button:hover {
-    background: linear-gradient(90deg, #1ecece 10%, #0ff 90%);
-    color: #191919;
+    background: gray;
+    color: black;
 }
 
 .contact-socials {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 4rem;
 }
 
 .social {
@@ -83,19 +67,19 @@ body {
     text-decoration: none;
     font-size: 1.1rem;
     padding: 0.4em 1em;
-    border-radius: 6px;
-    border: 1.2px solid #0ff;
-    background: rgba(0,255,255,0.08);
+    border-radius: 8px;
+    border: 1.2px solid #181818;
+    background: #181818;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .social:hover,
 .social:focus {
-    background: #0ff;
+    background: gray;
     color: #141414;
-    box-shadow: 0 0 16px #0ff, 0 0 2px #fff;
+    box-shadow: 0 0 16px gray;
 }
 
 .neon-glow {
-    text-shadow: 0 0 6px #0ff, 0 0 2px #fff;
+    text-shadow: 0 0 6px #fff, 0 0 2px #fff;
 }
