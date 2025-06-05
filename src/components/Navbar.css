@@ -1,0 +1,53 @@
+.dropdown-menu-container {
+    position: fixed;
+    top: 0;
+    right: 0; /* Esto posiciona el menú a la derecha */
+    width: 20vh;
+    height: 100vh;
+    background: #181818;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.close-menu {
+    position: absolute;
+    background: transparent;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.close-menu:focus {
+    outline: none;
+}
+
+.dropdown-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu li {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    background: #333;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+}
